@@ -8,21 +8,22 @@
     <title>SketchPad</title>
 </head>
 <body>
+   
     <div class="flex-container">
-        <div class="title">Etch-a-Sketch</div>
-        <div class="mode">Mode: Coloring</div>
         <div class="content">
+            <div class="text-c title">Etch-a-Sketch</div>
+            <div class="text-c mode">Mode: Coloring</div>
             <div class="board"></div>
             <div class="buttons">
-                <button onclick="changeColor('black')">Black</button>
-                <button onclick="changeColor('gray')">Gray</button>
-                <button onclick="changeColor('white')">Erasor</button>
-                <button onclick="changeColor('random')">Random</button>
-                <button onclick="resetBoard()">Reset</button>
+                <button class="buttom-s" onclick="changeColor('black')">Black</button>
+                <button class="buttom-s" onclick="changeColor('gray')">Gray</button>
+                <button class="buttom-s" onclick="changeColor('white')">Erasor</button>
+                <button class="buttom-s" onclick="changeColor('random')">Random</button>
+                <button class="buttom-s" onclick="resetBoard()">Reset</button>
             </div>
-            <div>
-                <input type="text" placeholder="Size of board" value="16" onchange="changeSize(this.value)">
-                <button>Set Size</button>
+            <div class="board--input">
+                <input class="input2" type="text" placeholder="Size of board" value=" 16" onchange="changeSize(this.value)">
+                <button class="buttom-s2">Set Size</button>
             </div>
             <div class="error"></div>
         </div>
