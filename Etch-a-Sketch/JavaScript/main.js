@@ -12,7 +12,7 @@ function populateBoard(size) {
         let square = document.createElement('div');
         square.addEventListener('mouseover',colorSquare);//we add an event listener to change the color
         square.style.backgroundColor = 'white';
-        square.style.border = '0.1px dotted #1e1e1e';
+        // square.style.border = '0.1px dotted #1e1e1e';
         board.insertAdjacentElement("beforeend", square);
     }
 }
