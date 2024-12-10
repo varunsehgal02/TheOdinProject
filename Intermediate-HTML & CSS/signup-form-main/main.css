@@ -1,0 +1,140 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, serif;
+    --left-panel: 40%;
+}
+
+#left-panel a
+{
+    color: white;
+}
+
+body
+{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+#left-panel
+{
+    width: var(--left-panel);
+    background-image: url('assets/halie-west.jpg');
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 90vh 10vh;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#logo
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    position: relative;
+    bottom: 10vw;
+}
+
+#photo-credit
+{
+    margin: auto;
+}
+
+#img-logo
+{
+    max-height: 90%;
+    width: auto;
+}
+
+#right-panel
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+    margin: 3em 0 3em 3em;
+}
+
+#registration-form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1.5em;
+    box-shadow: 10px 5px 10px silver;
+    margin: -1em 0 -1.5em -3em;
+    padding: 1em 0 1.5em 3em;
+}
+
+.form-div
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-div input
+{
+    margin-right: 5em;
+    height: 2em;
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: 20em;
+}
+
+.form-div input[type='password']:invalid
+{
+    border: 1px solid red;
+    border-radius: 3px;
+}
+
+.form-div input:focus
+{
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px lightgrey;
+}
+
+#right-panel p
+{
+    font-weight: bold;
+}
+
+#form-title
+{
+    font-size: 1.3em;
+}
+
+#registration-form label
+{
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+#login input[type='submit']
+{
+    color: white;
+    font-weight: bold;
+    background-color: #596D48;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 1em 4em;
+    border: none;
+    margin: 1.5em 0;
+    cursor: pointer;
+}
+
+#login a
+{
+    text-decoration: none;
+    color: #596D48;
+}
